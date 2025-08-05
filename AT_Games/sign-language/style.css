@@ -1,0 +1,96 @@
+/* Logo */
+.logo-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+}
+.logo-link img {
+  height: 50px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+h1 {
+  color: #0077cc;
+  font-size: 2em;
+}
+
+.carousel-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Cards hidden by default */
+.carousel .card {
+  display: none;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+.carousel .card.active {
+  display: block;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reveal-btn {
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #0077cc, #005fa3);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.reveal-btn:hover {
+  background: linear-gradient(135deg, #005fa3, #003f73);
+  transform: scale(1.05);
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #28a745;
+}
+.answer.active {
+  display: block;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-buttons button {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+}
+.nav-buttons button:hover {
+  background-color: #005fa3;
+}

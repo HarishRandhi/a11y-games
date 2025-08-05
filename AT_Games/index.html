@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility Games</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="index.html" class="logo-link" aria-label="Home">
+    <img src="img/logo.png" alt="Accessibility Games Logo" />
+  </a>
+
+  <header>
+    <h1>Accessibility Games</h1>
+  </header>
+
+  <nav class="image-nav" aria-label="Game Navigation">
+  <a href="./ishihara/ishihara_index.html">
+    <figure>
+      <img src="img/Ishihara_thumnail.png" alt="Ishihara Game" />
+      <figcaption>Ishihara Test</figcaption>
+    </figure>
+  </a>
+  <a href="./sign-language/sign_language_index.html">
+    <figure>
+      <img src="img/sign_language_thumbnail.png" alt="Sign Language Game" />
+      <figcaption>Sign Language</figcaption>
+    </figure>
+  </a>
+  <a href="./word-puzzle/word_puzzle.html">
+    <figure>
+      <img src="img/WorldPuzzle_thumnail.png" alt="Word Puzzle Game" />
+      <figcaption>Word Puzzle</figcaption>
+    </figure>
+  </a>
+</nav>
+  <main>
+    <p>Welcome to the homepage. Click an image above to explore a game.</p>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Accessibility Games
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

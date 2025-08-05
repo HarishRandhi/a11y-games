@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility Word Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Logo to Home -->
+  <a href="../index.html" class="logo-link" aria-label="Home">
+    <img src="../img/logo.png" alt="Home Logo">
+  </a>
+
+  <main class="content">
+    <h1>Accessibility Testing Word Puzzle</h1>
+
+    <div class="image-container">
+      <img id="puzzleImage" src="img/accessibility-word-puzzle.png" alt="Puzzle Image">
+      <img id="answerImage" src="img/accessibility-word-puzzle-answer.png" alt="Answer Image">
+    </div>
+
+    <button id="toggleBtn" aria-pressed="false">Show Answer</button>
+  </main>
+
+  <section class="clues" aria-labelledby="clueHeading">
+    <h2 id="clueHeading">Clues</h2>
+    <ol>
+      <li>iOS screen reader</li>
+      <li>Helps deaf users understand audio</li>
+      <li>Popular free Windows screen reader</li>
+      <li>Tactile reading system for the visually impaired</li>
+      <li>Reads out the content on the screen</li>
+      <li>Enlarges content for users with low vision</li>
+      <li>Input method important for accessibility</li>
+      <li>Web Content Accessibility Guidelines acronym</li>
+    </ol>
+  </section>
+
+</body>
+</html>
